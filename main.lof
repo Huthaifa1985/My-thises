@@ -1,0 +1,45 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Basic facial expression recognition system pipeline\relax }}{3}{figure.caption.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Background}{9}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Point Distribution Model \citep {cootes1999comparing}\relax }}{13}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Image Gradients and Spatial/Orientation Binning.\relax }}{16}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces HOG descriptor Visualization\relax }}{17}{figure.caption.7}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An overview of the face recognition system with HOG \citep {chen2014facial}\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of images with extracted SIFT features. The images represent the same object with different expression and illumination \citep {zhang2008face}\relax }}{19}{figure.caption.9}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Circularly symmetrical neighbour sets. Samples that do not exactly match the pixel grid are obtained via interpolation.\relax }}{21}{figure.caption.10}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces An example LBP thresholding depending on 8 neighbours. Pattern: 11110001, Decimal = 1+16+32+64+128=241.\relax }}{22}{figure.caption.11}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces The LBP operator\citep {ahonen2004face}\relax }}{22}{figure.caption.12}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Simple decision tree\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces New subsets Randomisation by bagging method\relax }}{26}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Emotional faces in the wild database}{31}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Examples of citizen labelling.\relax }}{34}{figure.caption.15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Faces samples from KDEF database\relax }}{35}{figure.caption.16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Screenshots two versions of the emotional faces website\relax }}{37}{figure.caption.18}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Examples of faces for which citizens' votes differ from the KDEF labelling. KDEF labels are shown above each image with the citizens' consensus below.\relax }}{39}{figure.caption.21}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Combining texture features for emotion classification}{41}{chapter.4}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Facial points detection \relax }}{44}{figure.caption.22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Face detection with Viola Jones \relax }}{46}{figure.caption.23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces An example of facial alignment .\relax }}{46}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Block features (HOG, LBP and SURF) extraction and combination\relax }}{47}{figure.caption.25}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagram of image importance masking \relax }}{54}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Importance masking steps for a KDEF image.\relax }}{55}{figure.caption.35}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Mask identifying the most important regions of the face for emotion classification derived by binarisng feature importance mas.\relax }}{56}{figure.caption.36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces HOG, LBP and SURF importance values comparison.Red, blue and green indicate which feature type (HOG, LBP and D-SURF) was most important for each block. \relax }}{58}{figure.caption.39}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces HOG cells, blocs and overlapping\relax }}{62}{figure.caption.43}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Facial expression recognition in Video}{72}{chapter.5}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Design of the technical and recording rooms \citep {tcherkassof2013dynemo}.\relax }}{75}{figure.caption.52}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Emotional expressive time-line. Frames are taken from the video of an encoder who reported disgust and its corresponding underneath time-line \citep {tcherkassof2013dynemo}.\relax }}{76}{figure.caption.53}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Examples of the five facial expression in the database\relax }}{78}{figure.caption.56}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Happy expression variation for the same person.\relax }}{78}{figure.caption.57}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Classifier prediction behaviour on two happy-labelled videos\relax }}{81}{figure.caption.59}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Decision making steps by smoothing the classifier scores ).\relax }}{81}{figure.caption.60}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Lowess (linear fit) smoothing result for video DVD14\_1\_1.\relax }}{83}{figure.caption.61}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The overall accuracy vs. smoothing span\_1\_1.\relax }}{84}{figure.caption.62}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusion and perspectives}{88}{chapter.6}

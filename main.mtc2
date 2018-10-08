@@ -1,0 +1,11 @@
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 8}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Review of main classification emotions methods }{\reset@font\mtcSfont 9}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Active shape model And Active appearance model}{\reset@font\mtcSSfont 9}{subsection.2.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Image texture based methods}{\reset@font\mtcSSfont 12}{subsection.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.1}Local histogram of oriented gradients (HOG)}{\reset@font\mtcSSSfont 13}{subsubsection.2.2.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.2}Scale-invariant feature transform (SIFT) and speeded up robust features (SURF)}{\reset@font\mtcSSSfont 16}{subsubsection.2.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.3}Local Binary Patterns (LBP)}{\reset@font\mtcSSSfont 18}{subsubsection.2.2.2.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Classification}{\reset@font\mtcSfont 22}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Random forest}{\reset@font\mtcSSfont 23}{subsection.2.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Support Vector Machine (SVM)}{\reset@font\mtcSSfont 27}{subsection.2.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Summary}{\reset@font\mtcSfont 29}{section.2.4}}

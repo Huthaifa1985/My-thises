@@ -1,0 +1,42 @@
+\babel@toc {english}{}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Introduction}{1}{chapter.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Background}{9}{chapter.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Emotional faces in the wild database}{31}{chapter.3}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Voting data sample\relax }}{34}{table.caption.17}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Some numbers from the built database\relax }}{38}{table.caption.19}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Confusion matrices for the citizens' performance on KDEF images. True classes are shown by rows, with assigned classes in columns. FE: fear; AN: anger; DI: disgust; HA: happiness; NE: neutral; SA: sadness; SU: surprise.\relax }}{39}{table.caption.20}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Combining texture features for emotion classification}{41}{chapter.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Confusion matrix for KDEF images with HOG featurs and a Random Forest classifier. True classes are shown by rows, with assigned classes in columns. The overall accuracy is 73\%.\relax }}{49}{table.caption.26}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Confusion matrix for KDEF images with LBP features and Random Forests classifier. The overall accuracy is: 79.9\%.\relax }}{49}{table.caption.27}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Confusion matrix for KDEF photos with D-SURF features and Random Forests classifier. The overall accuracy is: 70.3\%.\relax }}{50}{table.caption.28}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Confusion matrix for KDEF images with the combined features and Random Forests classifier. The overall accuracy is: 82.2\%. \relax }}{50}{table.caption.29}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Confusion matrix for eLFW images with HOG featurs and a Random Forest classifier. True classes are shown by rows, with assigned classes in columns. The overall accuracy is: 56.9\%.\relax }}{52}{table.caption.30}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Confusion matrix for eLFW images with LBP features and Random Forests classifier. The overall accuracy is: 60.9\%.\relax }}{52}{table.caption.31}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Confusion matrix for eLFW images with D-SURF features and Random Forests classifier. The overall accuracy is: 51.2\%.\relax }}{53}{table.caption.32}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Confusion matrix for eLFW images with the combined features and Random Forests classifier. The overall accuracy is: $67.3\%$\relax }}{53}{table.caption.33}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Confusion matrix for masked KDEF images with the combined features and Random Forests classifier. The overall accuracy is: $89.9\%$.\relax }}{57}{table.caption.37}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Comparison of classification accuracy of random forest classification using masked LBP, HOG and D-SURF texture features with other recent techniques. Evaluation on the KDEF data.\relax }}{57}{table.caption.38}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Confusion matrix on eLFW database using proposed method, trained with KDEF. Overall accuracy was $74.7\%$.\relax }}{59}{table.caption.40}
+\contentsline {table}{\numberline {4.12}{\ignorespaces Average entropy of citizens' voting distributions for correctly and incorrectly classified eLFW images.\relax }}{60}{table.caption.41}
+\contentsline {table}{\numberline {4.13}{\ignorespaces Confusion matrix for random forest classification of the masked eLFW databases. The overall accuracy was $71.6\%$. \relax }}{61}{table.caption.42}
+\contentsline {table}{\numberline {4.14}{\ignorespaces Confusion matrix for SVM classification of the eLFW database with the importance mask shown in Figure \ref {fig:impportSteps} \relax }}{63}{table.caption.44}
+\contentsline {table}{\numberline {4.15}{\ignorespaces Confusion matrix for SVM classification of the KDEF database without the importance mask. The overall accuracy is \%72 \relax }}{64}{table.caption.45}
+\contentsline {table}{\numberline {4.16}{\ignorespaces Confusion matrix for SVM classification of the KDEF database with the importance mask shown in figure \ref {fig:impportSteps}. The ovrall accuracy is $81 \%$.\relax }}{65}{table.caption.46}
+\contentsline {table}{\numberline {4.17}{\ignorespaces caption}}{66}{table.caption.47}
+\contentsline {table}{\numberline {4.18}{\ignorespaces Pairwise RF classifiers and pairwise SVM classifiers performance with KDEF.\relax }}{67}{table.caption.48}
+\contentsline {table}{\numberline {4.19}{\ignorespaces Random Forestrs pair-classifiers optimised weights\relax }}{68}{table.caption.49}
+\contentsline {table}{\numberline {4.20}{\ignorespaces Confusion matrix for equally weighted pairwise classification on the KDEF data. Overall accuracy is 92\%.\relax }}{69}{table.caption.50}
+\contentsline {table}{\numberline {4.21}{\ignorespaces caption}}{70}{table.caption.51}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Facial expression recognition in Video}{72}{chapter.5}
+\contentsline {table}{\numberline {5.1}{\ignorespaces DynEmo database data type.\relax }}{77}{table.caption.54}
+\contentsline {table}{\numberline {5.2}{\ignorespaces General statistics about the new database\relax }}{78}{table.caption.55}
+\contentsline {table}{\numberline {5.3}{\ignorespaces caption}}{80}{table.caption.58}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Optimising of smoothing span by Nelder\IeC {\textendash }Mead (Staring point (0.5))\relax }}{85}{table.caption.63}
+\contentsline {table}{\numberline {5.5}{\ignorespaces caption}}{86}{table.caption.64}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Conclusion and perspectives}{88}{chapter.6}

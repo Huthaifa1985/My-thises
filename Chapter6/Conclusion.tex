@@ -1,0 +1,36 @@
+\chapter{Conclusion and perspectives}
+
+With the advancement in human-computer interaction, machines are becoming more important part of our lives. Facial expressions are an essential language to understand more about humans.
+One important factor that should be considered in developing a real facial expression recognition system is the availability of a useful database does not contain posed portraits of actors displaying emotions. Our work has started with the building of a website to construct a new natural facial expression database using a current database called  Labelled Faces in the Wild (LFW) by asking citizens to vote what emotions they see in a selected group of images. Another current emotionally-labelled database has been used on the website called The Karolinska Directed Emotional Faces (KDEF) to evaluate citizens performance. The new database called Emotional- Labelled Faces in the Wild (eLFW). 
+
+
+In this thesis, we presented an automated new approach for facial expression recognition of seven emotions.  Three types of texture features from static images are combined: Local Binary Patterns (LBP), Histogram of Oriented Gradients (HOG) and Dense Speeded Up Robust Features (D-SURF), then the resulting features are classified using random forests. The use of random forests allows identification of the most important feature types and facial locations for emotion classification. Regions around the eyes, forehead, sides of the nose and mouth are found to be most significant. We classified the important features with random forest and support vector machines, and we found the classification performance became better than using all extracted facial features. We achieve better than state-of-the-art accuracies using multiple texture feature descriptors. 
+
+
+Further improvements to classification accuracy were obtained by pairwise weighted voting between dichotomous classifiers, and we showed how to learn optimal weights using an evolutionary algorithm.  The resulting accuracies are significantly better than the current published state of the art results on the posed KDEF data. Nonetheless, particularly for unposed data, classification of fear, anger, disgust, sadness and surprise remains imperfect, and we obtain classification accuracies of about 77\%. We observe that these are the emotions that humans find more difficult to classify from static images in the eLFW data.
+
+%  Current work is to build upon these methods to take advantage of the additional information in dynamic expressions using video data.
+
+%Moreover, we used an existing psychological facial emotion video dataset called DynEmo to prepare it to be used for machine training and testing purposes. We prepared  44 videos include 14543 frames distributed on five facial expressions as 8902 frames balled as happy, 313 fear, 2192 angry,  2665 surprise and  471 disgust. 
+We use the method which was proposed in chapter \ref{Ch_4} to train random forests model with data from the DynEmo dataset mixed with some images from KDEF and eLFW. 
+We tested some smoothing techniques to reduce the misclassification by smoothing the classifiers scores. To find the optimal  smoothing span, we used Nelder–Mead method to minimise the error.
+
+As a result, like static images, our proposed system gives good results with videos. We found that applying smoothing methods with an optimal span value improved the performance of the classifiers by smoothing their scores. As we have imposed, that the small misclassification should be fixed depending on the nearby frames.
+
+
+
+\section{Future Work}
+More research effort is required to be put forth for recognising more complicated facial expressions, such as fatigue, pain, and mental states such as agreeing, disagreeing, lie, frustration, thinking as they have numerous application areas.
+
+In this thesis, we have considered a real emotions recognition. For this mission we used existing data contains real emotion and we label it or modify the labelling method. It would be good in the future work if we create a new dataset for video and static images contain labelled data for face and body language. 
+
+Body language is very important to understand human emotions \citep{burgoon2016nonverbal}, and the tracking of the body language from video  and static has
+received a large deal of attention over the years \citep{aggarwal1999human}. 
+
+
+A more interesting avenue to explore would be to use convolutional neural networks for real emotion recognition which may improve the cost and time benefits and it may give more accurate results. Deep learning has an ability to generate new features from a limited series of features located in the training dataset. So we can work big data technology and save much time to work with more complex sets of features. More image texture features have to be explored to find if more accuracy may be archived by using them.
+
+The real-time is a very important factor in any applications, as we saw in chapter 5, smoothing need nearly 5 seconds to get the result, so we need to investigate how can we solve this problem in our proposed system. A possible solution may solve this issue is to explore Micro-Expression \citep{borza2017high}.
+
+
+  

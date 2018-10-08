@@ -1,0 +1,444 @@
+%%%  Useful macros
+\usepackage[english]{babel}
+\usepackage{calc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{xspace}
+\usepackage[]{url}
+\usepackage{alltt}
+\usepackage{mdwlist}
+%\usepackage{warn}
+\usepackage{array}
+\usepackage{dcolumn}            % Defines alignment of columns on decimal point
+
+% Use \usepackage[dvipsnames]{xcolor} but if that produces an options clash
+% then \documentclass[dvipsnames]{xxx}
+
+% $Id: rme-macros.sty,v 1.6 2008/12/16 22:55:24 reverson Exp reverson $
+
+
+\newcommand{\ig}[2][width=\linewidth]{\includegraphics[#1]{#2}}
+
+\newcommand{\cl}[1]{\centerline{#1}}
+\newcommand{\cll}[1][\relax]{\mbox{}\hfill #1 \hfill\mbox{}}
+\newcommand{\ie}{i.e.,\xspace}
+\newcommand{\eg}{e.g.,\xspace}
+\newcommand{\Tr}{\mbox{Tr}}
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\nats}{\mathbb{N}}
+\newcommand{\quots}{\mathbb{Q}}
+\newcommand{\ints}{\mathbb{Z}}
+
+% Tiny mbox text for use in things like $E\subrm{data}$
+\newcommand{\subrm}[1]{_\textrm{\tiny#1}}
+\newcommand{\suprm}[1]{^\textrm{\tiny#1}}
+
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\Span}{span}
+\DeclareMathOperator{\Null}{null}
+\DeclareMathOperator{\Ker}{ker}
+\DeclareMathOperator{\median}{median}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\sgn}{sgn}
+
+\renewcommand{\b}[1]{\mathbf{#1}}
+%\newcommand{\B}[1]{\mathbf{#1}}
+\newcommand{\Bs}[1]{\boldsymbol{#1}}
+
+\newcommand{\nin}{\not\in}
+\newcommand{\pair}[2]{\langle #1,#2 \rangle}
+\newcommand{\triple}[3]{\langle #1,#2,#3 \rangle}
+\newcommand{\set}[1]{\mbox{$\{ #1 \}$}}
+
+\newcommand{\bA}{\mathbf{A}}
+\newcommand{\bB}{\mathbf{B}}
+\newcommand{\bC}{\mathbf{C}}
+\newcommand{\bD}{\mathbf{D}}
+\newcommand{\bE}{\mathbf{E}}
+\newcommand{\bF}{\mathbf{F}}
+\newcommand{\bG}{\mathbf{G}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bI}{\mathbf{I}}
+\newcommand{\bJ}{\mathbf{J}}
+\newcommand{\bK}{\mathbf{K}}
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bM}{\mathbf{M}}
+\newcommand{\bN}{\mathbf{N}}
+\newcommand{\bO}{\mathbf{O}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bR}{\mathbf{R}}
+\newcommand{\bS}{\mathbf{S}}
+\newcommand{\bT}{\mathbf{T}}
+\newcommand{\bU}{\mathbf{U}}
+\newcommand{\bV}{\mathbf{V}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bX}{\mathbf{X}}
+\newcommand{\bY}{\mathbf{Y}}
+\newcommand{\bZ}{\mathbf{Z}}
+
+\newcommand{\ba}{\mathbf{a}}
+\newcommand{\bb}{\mathbf{b}}
+\newcommand{\bc}{\mathbf{c}}
+\newcommand{\bd}{\mathbf{d}}
+\newcommand{\be}{\mathbf{e}}
+\newcommand{\bff}{\mathbf{f}}
+\newcommand{\bg}{\mathbf{g}}
+\newcommand{\bh}{\mathbf{h}}
+\newcommand{\bi}{\mathbf{i}}
+\newcommand{\bj}{\mathbf{j}}
+\newcommand{\bk}{\mathbf{k}}
+\newcommand{\bll}{\mathbf{l}}
+\newcommand{\bm}{\mathbf{m}}
+\newcommand{\bn}{\mathbf{n}}
+\newcommand{\bo}{\mathbf{o}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\brr}{\mathbf{r}}
+\newcommand{\bs}{\mathbf{s}}
+\newcommand{\bt}{\mathbf{t}}
+\newcommand{\bu}{\mathbf{u}}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\bw}{\mathbf{w}}
+\newcommand{\bx}{\mathbf{x}}
+\newcommand{\by}{\mathbf{y}}
+\newcommand{\bz}{\mathbf{z}}
+
+\newcommand{\bzero}{\mathbf{0}}
+\newcommand{\bone}{\mathbf{1}}
+
+
+\newcommand{\balpha}{\boldsymbol{\alpha}}
+\newcommand{\bbeta}{\boldsymbol{\beta}}
+\newcommand{\bdelta}{\boldsymbol{\delta}}
+\newcommand{\bDelta}{\boldsymbol{\Delta}}
+\newcommand{\bgamma}{\boldsymbol{\gamma}}
+\newcommand{\bepsilon}{\boldsymbol{\epsilon}}
+\newcommand{\bmu}{\boldsymbol{\mu}}
+\newcommand{\bnu}{\boldsymbol{\nu}}
+\newcommand{\bphi}{\boldsymbol{\phi}}
+\newcommand{\bpi}{\boldsymbol{\pi}}
+\newcommand{\bPhi}{\boldsymbol{\Phi}}
+\newcommand{\bpsi}{\boldsymbol{\psi}}
+\newcommand{\bPsi}{\boldsymbol{\Psi}}
+\newcommand{\bPi}{\boldsymbol{\Pi}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+\newcommand{\bsigma}{\boldsymbol{\sigma}}
+\newcommand{\bSigma}{\boldsymbol{\Sigma}}
+\newcommand{\bkappa}{\boldsymbol{\kappa}}
+ \newcommand{\bKappa}{\boldsymbol{\Kappa}}
+\newcommand{\blambda}{\boldsymbol{\lambda}}
+ \newcommand{\bLambda}{\boldsymbol{\Lambda}}
+\newcommand{\bTheta}{\boldsymbol{\Theta}}
+\newcommand{\bomega}{\boldsymbol{\omega}}
+\newcommand{\bOmega}{\boldsymbol{\Omega}}
+
+
+
+
+\newcommand{\Ab}{\mathbf{A}}
+\newcommand{\Bb}{\mathbf{B}}
+\newcommand{\Cb}{\mathbf{C}}
+\newcommand{\Db}{\mathbf{D}}
+\newcommand{\Eb}{\mathbf{E}}
+\newcommand{\Fb}{\mathbf{F}}
+\newcommand{\Gb}{\mathbf{G}}
+\newcommand{\Hb}{\mathbf{H}}
+\newcommand{\Ib}{\mathbf{I}}
+\newcommand{\Jb}{\mathbf{J}}
+\newcommand{\Kb}{\mathbf{K}}
+\newcommand{\Lb}{\mathbf{L}}
+\newcommand{\Mb}{\mathbf{M}}
+\newcommand{\Nb}{\mathbf{N}}
+\newcommand{\Ob}{\mathbf{O}}
+\newcommand{\Pb}{\mathbf{P}}
+\newcommand{\Qb}{\mathbf{Q}}
+\newcommand{\Rb}{\mathbf{R}}
+\newcommand{\Sb}{\mathbf{S}}
+\newcommand{\Tb}{\mathbf{T}}
+\newcommand{\Ub}{\mathbf{U}}
+\newcommand{\Vb}{\mathbf{V}}
+\newcommand{\Wb}{\mathbf{W}}
+\newcommand{\Xb}{\mathbf{X}}
+\newcommand{\Yb}{\mathbf{Y}}
+\newcommand{\Zb}{\mathbf{Z}}
+
+\newcommand{\ab}{\mathbf{a}}
+%\newcommand{\bb}{\mathbf{b}}
+\newcommand{\cb}{\mathbf{c}}
+\newcommand{\db}{\mathbf{d}}
+\newcommand{\eb}{\mathbf{e}}
+\newcommand{\fb}{\mathbf{f}}
+\newcommand{\gb}{\mathbf{g}}
+\newcommand{\hb}{\mathbf{h}}
+\newcommand{\ib}{\mathbf{i}}
+\newcommand{\jb}{\mathbf{j}}
+\newcommand{\kb}{\mathbf{k}}
+\newcommand{\lb}{\mathbf{l}}
+\newcommand{\mb}{\mathbf{m}}
+\newcommand{\nb}{\mathbf{n}}
+\newcommand{\ob}{\mathbf{o}}
+\newcommand{\pb}{\mathbf{p}}
+\newcommand{\qb}{\mathbf{q}}
+\newcommand{\rb}{\mathbf{r}}
+\newcommand{\sbb}{\mathbf{s}}
+\newcommand{\tb}{\mathbf{t}}
+\newcommand{\ub}{\mathbf{u}}
+\newcommand{\vb}{\mathbf{v}}
+\newcommand{\wb}{\mathbf{w}}
+\newcommand{\xb}{\mathbf{x}}
+\newcommand{\yb}{\mathbf{y}}
+\newcommand{\zb}{\mathbf{z}}
+
+\newcommand{\zerob}{\mathbf{0}}
+\newcommand{\oneb}{\mathbf{1}}
+
+
+\newcommand{\alphab}{\boldsymbol{\alpha}}
+\newcommand{\betab}{\boldsymbol{\beta}}
+\newcommand{\deltab}{\boldsymbol{\delta}}
+\newcommand{\Deltab}{\boldsymbol{\Delta}}
+\newcommand{\gammab}{\boldsymbol{\gamma}}
+\newcommand{\epsilonb}{\boldsymbol{\epsilon}}
+\newcommand{\mub}{\boldsymbol{\mu}}
+\newcommand{\nub}{\boldsymbol{\nu}}
+\newcommand{\pib}{\boldsymbol{\pi}}
+\newcommand{\phib}{\boldsymbol{\phi}}
+\newcommand{\Phib}{\boldsymbol{\Phi}}
+\newcommand{\Pib}{\boldsymbol{\Pi}}
+\newcommand{\psib}{\boldsymbol{\psi}}
+\newcommand{\Psib}{\boldsymbol{\Psi}}
+\newcommand{\thetab}{\boldsymbol{\theta}}
+\newcommand{\sigmab}{\boldsymbol{\sigma}}
+\newcommand{\Sigmab}{\boldsymbol{\Sigma}}
+\newcommand{\lambdab}{\boldsymbol{\lambda}}
+\newcommand{\Lambdab}{\boldsymbol{\Lambda}}
+\newcommand{\Thetab}{\boldsymbol{\Theta}}
+\newcommand{\omegab}{\boldsymbol{\omega}}
+\newcommand{\Omegab}{\boldsymbol{\Omega}}
+
+\newcommand{\bnabla}{\boldsymbol{\nabla}}
+\newcommand{\nablab}{\boldsymbol{\nabla}}
+
+
+
+\newcommand{\model}{\mathcal{M}}
+\newcommand{\data}{\mathcal{D}}
+\newcommand{\class}{\mathcal{C}}
+\newcommand{\region}{\mathcal{R}}
+\newcommand{\gauss}{\mathcal{G}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\Ga}{\mathcal{G}}
+\newcommand{\multinom}{\mathcal{M}}
+\newcommand{\wishart}{\mathcal{W}}
+\newcommand{\dirichlet}{\mathcal{D}}
+\newcommand{\defn}{\overset{\text{\tiny def}}{=}}
+\newcommand{\grad}{\nabla}
+
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\DeclareMathOperator\erf{erf}
+\DeclareMathOperator\erfc{erfc}
+% For \int f(x0 \ud x
+\newcommand{\ud}{\mathop{}\!\mathrm{d}}
+
+%\newcommand{\Th}[1]{$\mbox{#1}^{\mbox{\scriptsize th}}$}
+%\newcommand{\St}[1]{$\mbox{#1}^{\mbox{\scriptsize st}}$}
+
+\newcommand{\ord}[2][th]{$\mbox{#2}^{\mbox{\scriptsize #1}}$}
+\newcommand{\trp}{^{T}}
+\newcommand{\given}{\,|\,}
+\newcommand{\invtrp}{^{-T}}
+\newcommand{\inv}{^{-1}}
+\newcommand{\pinv}{^{\dagger}}
+\newcommand{\mcal}[1]{\mathcal{#1}}
+
+\renewcommand{\d}[2]{\frac{d #1}{d #2}}
+\newcommand{\D}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dd}[2]{\frac{d^2 #1}{d {#2}^2}}
+\newcommand{\DD}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
+\newcommand{\Dmix}[3]{\frac{\partial^2 #1}{\partial #2 \partial #3 }}
+
+\newcommand{\bigbullet}{{\Large$\bullet$\,}}
+
+\newcommand{\eqclass}[1]{[\![#1]\!]} % equivalence class
+\newcommand{\preclf}{\prec^\bullet}  % length-first order
+
+%\newcommand{\defn}{\overset{\text{\tiny def}}{=}}
+
+\newcommand{\average}[1]{\langle #1 \rangle}
+
+\newcommand{\matlab}{\textsc{Matlab}\xspace}
+\newcommand{\netlab}{\textsc{netlab}\xspace}
+
+\newcommand{\FIXME}[1]{[\textbf{FIXME} \textsl{#1}]}
+\newcommand{\mFIXME}[1]{$\dagger$\mnote{\textsl{#1}}}
+\newcommand{\mnote}[2][\dagger]{$#1$\marginpar{\raggedright\tiny$#1$ #2}}
+
+% Set the extra space above and below displayed equations.
+\newcommand{\displayskip}[1]{
+  \setlength{\abovedisplayskip}{#1}
+  \setlength{\belowdisplayskip}{#1}
+  \setlength{\abovedisplayshortskip}{#1}
+  \setlength{\belowdisplayshortskip}{#1}
+}
+
+\newenvironment{shortalign*}{%
+  \setlength{\mathindent}{0pt}%
+  \setlength{\abovedisplayskip}{-\baselineskip}%
+  \setlength{\abovedisplayshortskip}{\abovedisplayskip}%
+  \start@align\@ne\st@rredtrue\m@ne
+}%
+{\endalign}
+
+\newenvironment{shortalignat}[1]{%
+  \setlength{\mathindent}{0pt}%
+  \setlength{\abovedisplayskip}{-\baselineskip}%
+  \setlength{\abovedisplayshortskip}{\abovedisplayskip}%
+  \start@align\z@\st@rredtrue#1
+}%
+{\endalign}
+
+
+
+% Itemize with the bullets indented left into the margin.
+% cf Latex Companion pp60
+
+\newlength{\rmesaveleftmargin}%
+
+\newenvironment{Ventry}[2][black]%
+{\begin{list}{}{%
+      \setlength{\rmesaveleftmargin}{0pt}%
+      \renewcommand{\makelabel}[1]{{\hspace*{\rmesaveleftmargin}\color{#1}\textbf{##1}}\hfill}%
+      \settowidth{\labelwidth}{\hspace*{\rmesaveleftmargin}\textbf{#2}}%
+      \setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+  {\end{list}}
+
+\newenvironment{RVentry}[2][black]%
+{\begin{list}{}{\renewcommand{\makelabel}[1]{{\color{#1}\hfill\textbf{##1}}}%
+      \settowidth{\labelwidth}{\textbf{#2}}%
+      \setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+  {\end{list}}
+
+\newenvironment{ventry}[2][black]%
+{\begin{list}{}{\renewcommand{\makelabel}[1]{{\color{#1}##1\hfill}}%
+      \settowidth{\labelwidth}{#2}%
+      \setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+  {\end{list}}
+
+
+\newenvironment{rventry}[2][black]%
+{\begin{list}{}{\renewcommand{\makelabel}[1]{{\color{#1}\hfill##1}}%
+      \settowidth{\labelwidth}{#2}%
+      \setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+  {\end{list}}
+
+\newcommand{\shortlist}[1][0pt]{\setlength{\itemsep}{#1}
+\setlength{\parskip}{#1}
+\setlength{\topskip}{#1}
+}
+
+\newcommand{\hangpar}[2]{
+  \begin{Ventry}{#1}%
+    \item [#1] #2%
+  \end{Ventry}%
+}
+
+\newcommand{\Vspace}[1]{\mbox{}\\[#1]\mbox{}}
+\newcommand{\bignote}[1]{%
+\mbox{}\par\noindent\fbox{\parbox{0.99\linewidth}{\textit{#1}}}}
+
+\newcommand{\highwater}[1][1cm]{\mbox{}\\[#1] \hrule \mbox{}\\[#1]}
+
+\newcommand{\Red}[1]{\textcolor{red}{#1}}
+\newcommand{\Blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\Magenta}[1]{\textcolor{magenta}{#1}}
+\newcommand{\Green}[1]{\textcolor{OliveGreen}{#1}}
+\newcommand{\Cyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\Black}[1]{\textcolor{black}{#1}}
+
+
+\newcommand{\textbfRed}[1]{\textbf{\textcolor{red}{#1}}}
+\newcommand{\textbfBlue}[1]{\textbf{\textcolor{blue}{#1}}}
+\newcommand{\textbfMagenta}[1]{\textbf{\textcolor{magenta}{#1}}}
+\newcommand{\textbfGreen}[1]{\textbf{\textcolor{OliveGreen}{#1}}}
+\newcommand{\textbfCyan}[1]{\textbf{\textcolor{cyan}{#1}}}
+
+\newcommand{\textitRed}[1]{\textit{\textcolor{red}{#1}}}
+\newcommand{\textitBlue}[1]{\textit{\textcolor{blue}{#1}}}
+\newcommand{\textitMagenta}[1]{\textit{\textcolor{magenta}{#1}}}
+\newcommand{\textitGreen}[1]{\textit{\textcolor{OliveGreen}{#1}}}
+\newcommand{\textitCyan}[1]{\textit{\textcolor{cyan}{#1}}}
+
+\newcommand{\textttRed}[1]{\texttt{\textcolor{red}{#1}}}
+\newcommand{\textttBlue}[1]{\texttt{\textcolor{blue}{#1}}}
+\newcommand{\textttMagenta}[1]{\texttt{\textcolor{magenta}{#1}}}
+\newcommand{\textttGreen}[1]{\texttt{\textcolor{OliveGreen}{#1}}}
+\newcommand{\textttCyan}[1]{\texttt{\textcolor{cyan}{#1}}}
+
+
+
+\newenvironment{xquote}{%
+\par%
+\noindent{}\qquad\begin{minipage}[t]{0.8\linewidth}%
+\begin{alltt}}%
+{\end{alltt}%
+\end{minipage}
+\mbox{}\\[0.5\baselineskip]}
+%
+\newcommand{\cmd}[1]{\texttt{#1}}
+
+% from the latex companion p 108.  For use in tabular environments:
+% \begin{tabular}{l|{\PBS\raggedright\hspace{0pt}}p{4.5cm}}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\let\PBS=\PreserveBackslash
+
+%% The following is ripped directly out of time.sty.
+%% (C) Copyright Mike Piff, \filedate}
+\def\now{{%
+   \def\Time{3}%
+   \def\Hour{4}%
+   \def\Minute{5}%
+   \count\Time=\time\relax
+   \ifnum\count\Time=0
+      \count\Time=1440 %%force 12pm
+   \fi
+   \count\Hour=\count\Time\relax
+   \divide\count\Hour by 60\relax%%hours past midnight
+   \count\Minute=\count\Hour\relax
+   \multiply\count\Minute by -60\relax
+   \advance\count\Minute by \count\Time\relax %%minutes past hour
+   %\ifnum\count\Hour=0
+   %   \count\Hour=12
+   %\else
+   %   \ifnum\count\Hour>12
+   %      \advance\count\Hour by-12
+   %   \fi
+   %\fi
+   \the\count\Hour\relax:%
+   \ifnum\count\Minute<10
+      0%
+   \fi
+   \the\count\Minute\relax
+   %\ifnum\count\Time>720
+   %   pm%
+   %\else
+   %   am%
+   %\fi
+}}
+
+
+% Need to have shell escapes enabled, probably in texmf.cnf
+\newcommand*\bzrrevision{%
+  \edef\RestoreEndlinechar{\endlinechar=\the\endlinechar\relax}%
+  \endlinechar=-1 %
+  \input{"|/opt/local/bin/bzr version-info --custom --template='Version {revno} at {date}'"}
+  \RestoreEndlinechar
+}
+
+%%% Local Variables:
+%%% mode: latex
+%%% End:

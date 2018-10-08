@@ -1,0 +1,45 @@
+\documentclass[12pt,onecolumn]{report}
+\include{Backages}
+
+
+\setcounter{secnumdepth}{3}
+% * <huthaifah1985@gmail.com> 2018-01-15T07:21:18.038Z:
+%
+% ^.
+
+\begin{document}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+\dominitoc% Initialization
+
+
+%
+%\include{Declaration/declaration}
+
+\include{TitlePage}
+\include{Abstract/abstract}
+%\include{Dedication/Dedication}
+%\include{Acknowledgement/acknowledge}
+
+
+
+\pagenumbering{roman}
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+\include{Publications}
+
+\input{Chapter1/Introduction}
+\input{Chapter2/Background}
+\input{Chapter3/Database}
+\input{Chapter4/Expression_classification}
+\input{Chapter5/chapter5}
+\input{Chapter6/Conclusion}
+
+
+\bibliographystyle{apalike}
+\bibliography{References/references} % Path to your References.bib file
+
+\end{document}
